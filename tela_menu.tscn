@@ -1,0 +1,110 @@
+[gd_scene load_steps=3 format=3 uid="uid://lcxxhrgwyqhc"]
+
+[ext_resource type="Texture2D" uid="uid://c6jw8u41bpbdj" path="res://photo-1617309215127-ebeb4eddeba5.jpeg" id="1_a47rx"]
+[ext_resource type="Texture2D" uid="uid://ejlvru5o0ely" path="res://icon.svg" id="2_3wnar"]
+
+[node name="TelaMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -10.0
+offset_right = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fundo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_a47rx")
+
+[node name="Logo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 63.0
+offset_right = 240.0
+offset_bottom = 191.0
+texture = ExtResource("2_3wnar")
+
+[node name="Arquivo01" type="Label" parent="."]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 379.0
+offset_right = 187.0
+offset_bottom = 402.0
+text = "Arquivo 01"
+
+[node name="Arquivo02" type="Label" parent="."]
+offset_left = 100.0
+offset_top = 491.0
+offset_right = 183.0
+offset_bottom = 516.0
+text = "Arquivo 02"
+
+[node name="Arquivo03" type="Label" parent="."]
+offset_left = 104.0
+offset_top = 573.0
+offset_right = 187.0
+offset_bottom = 596.0
+text = "Arquivo 03"
+
+[node name="BotaoJogar01" type="Button" parent="."]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 381.0
+offset_right = 411.0
+offset_bottom = 412.0
+text = "JOGAR
+"
+
+[node name="BotaoJogar02" type="Button" parent="."]
+offset_left = 265.0
+offset_top = 484.0
+offset_right = 422.0
+offset_bottom = 515.0
+text = "JOGAR
+"
+
+[node name="BotaoJogar03" type="Button" parent="."]
+offset_left = 252.0
+offset_top = 572.0
+offset_right = 409.0
+offset_bottom = 603.0
+text = "JOGAR
+"
+
+[node name="BotaoApagar01" type="Button" parent="."]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 384.0
+offset_right = 556.0
+offset_bottom = 415.0
+text = "APAGAR"
+
+[node name="BotaoApagar02" type="Button" parent="."]
+offset_left = 452.0
+offset_top = 480.0
+offset_right = 524.0
+offset_bottom = 511.0
+text = "APAGAR"
+
+[node name="BotaoApagar03" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 574.0
+offset_right = 522.0
+offset_bottom = 605.0
+text = "APAGAR"
+
+[node name="Opcoes" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_right = 1164.0
+offset_bottom = 655.0
+
+[node name="HSlider" type="HSlider" parent="Opcoes"]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 308.0
+offset_right = 895.0
+offset_bottom = 400.0

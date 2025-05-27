@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Novo Projeto de Jogo"
+config/name="Hush Within Shadows"
+run/main_scene="uid://lcxxhrgwyqhc"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
