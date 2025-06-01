@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://lcxxhrgwyqhc"]
+
+[ext_resource type="Script" uid="uid://ddasojdr2ex1l" path="res://tela_menu.gd" id="1_3b2dc"]
+[ext_resource type="Texture2D" uid="uid://c6jw8u41bpbdj" path="res://photo-1617309215127-ebeb4eddeba5.jpeg" id="1_a47rx"]
+[ext_resource type="Texture2D" uid="uid://ejlvru5o0ely" path="res://icon.svg" id="2_3wnar"]
+[ext_resource type="AudioStream" uid="uid://bv50m7c13qoh" path="res://howling-wind-109590.mp3" id="4_irlws"]
+[ext_resource type="AudioStream" uid="uid://caishplhblnbw" path="res://mouse-click-331781.mp3" id="5_3b2dc"]
+
+[node name="TelaMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -10.0
+offset_right = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3b2dc")
+
+[node name="Fundo" type="TextureRect" parent="."]
+layout_direction = 4
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -11.0
+offset_top = -14.0
+offset_right = 29.0
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_a47rx")
+expand_mode = 1
+
+[node name="Logo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 39.0
+offset_right = 320.0
+offset_bottom = 245.0
+texture = ExtResource("2_3wnar")
+expand_mode = 1
+
+[node name="LabelPress" type="Label" parent="."]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 563.0
+offset_right = 681.0
+offset_bottom = 590.0
+text = "Press [qualquer tecla]\" ou botão"
+
+[node name="SonsAmbiente" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_irlws")
+volume_db = -10.0
+autoplay = true
+
+[node name="SonsEfeitos" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_3b2dc")
+volume_db = 24.0
