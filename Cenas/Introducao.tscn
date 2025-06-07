@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://chrqsghjp7dsm"]
+
+[ext_resource type="Script" uid="uid://drhln1md5sdpa" path="res://Scripst/caixa_dialogo.gd" id="1_tdqpl"]
+
+[sub_resource type="Theme" id="Theme_yyskm"]
+
+[node name="Introducao" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tdqpl")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FundoCaixa" type="Panel" parent="."]
+layout_direction = 4
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -177.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_yyskm")
+
+[node name="Nome" type="PanelContainer" parent="FundoCaixa"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 53.0
+offset_bottom = 50.0
+
+[node name="Nome do personagem" type="Label" parent="FundoCaixa/Nome"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 40
+text = "Você"
+
+[node name="Texto" type="RichTextLabel" parent="."]
+layout_mode = 2
+offset_left = 2.0
+offset_top = 535.0
+offset_right = 1153.0
+offset_bottom = 648.0
+theme_override_font_sizes/normal_font_size = 30
