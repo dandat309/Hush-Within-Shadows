@@ -10,7 +10,6 @@ func _on_botao_jogar_pressed() -> void:
 	await anim.animation_finished
 	get_tree().change_scene_to_file("res://Cenas/Introducao.tscn")
 
-
 func _on_botao_som_pressed() -> void:
 	get_tree().change_scene_to_file("res://Cenas/Introducao.tscn")
 	
