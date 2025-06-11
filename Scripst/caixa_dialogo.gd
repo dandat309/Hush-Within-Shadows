@@ -41,6 +41,6 @@ func _input(event):
 		else:
 			indice += 1
 			if indice >= falas.size():
-				get_tree().change_scene_to_file("res://Cenas/tela_menu.tscn")
+				get_tree().change_scene_to_file("res://Cenas/Porao.tscn")
 			else:
 				iniciar_texto()

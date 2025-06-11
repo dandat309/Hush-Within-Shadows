@@ -23,7 +23,6 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="FundoCaixa" type="Panel" parent="."]
-layout_direction = 4
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0

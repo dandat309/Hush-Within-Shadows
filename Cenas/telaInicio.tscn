@@ -1,0 +1,136 @@
+[gd_scene load_steps=8 format=3 uid="uid://lcxxhrgwyqhc"]
+
+[ext_resource type="Script" uid="uid://ddasojdr2ex1l" path="res://scripst/tela_menu.gd" id="1_l142i"]
+[ext_resource type="FontFile" uid="uid://dkbs6g2kx5gec" path="res://Font/RubikDirt-Regular.ttf" id="2_wmvt7"]
+[ext_resource type="AudioStream" uid="uid://bv50m7c13qoh" path="res://Sons/howling-wind-109590.mp3" id="3_hdk3u"]
+[ext_resource type="AudioStream" uid="uid://caishplhblnbw" path="res://Sons/mouse-click-331781.mp3" id="4_av0s0"]
+
+[sub_resource type="Animation" id="Animation_3b2dc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_7m076"]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3b2dc"]
+_data = {
+&"RESET": SubResource("Animation_3b2dc"),
+&"fade_out": SubResource("Animation_7m076")
+}
+
+[node name="telaInicio" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -10.0
+offset_right = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l142i")
+
+[node name="Fundo" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_right = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Titulo" type="Label" parent="."]
+layout_direction = 2
+layout_mode = 0
+offset_left = 61.0
+offset_top = 32.0
+offset_right = 536.0
+offset_bottom = 247.0
+theme_override_fonts/font = ExtResource("2_wmvt7")
+theme_override_font_sizes/font_size = 70
+text = "Hush Within Shadows"
+autowrap_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 186.0
+offset_top = 81.0
+offset_right = 567.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 5
+alignment = 1
+
+[node name="BotaoJogar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "JOGAR"
+
+[node name="BotaoSom" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "OPCOES"
+
+[node name="BotaoSair" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "SAIR"
+
+[node name="SonsAmbiente" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_hdk3u")
+volume_db = -10.0
+autoplay = true
+
+[node name="SonsClique" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_av0s0")
+volume_db = 24.0
+
+[node name="FadeRect" type="ColorRect" parent="."]
+physics_interpolation_mode = 0
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../FadeRect")
+libraries = {
+&"": SubResource("AnimationLibrary_3b2dc")
+}
+
+[connection signal="pressed" from="VBoxContainer/BotaoJogar" to="." method="_on_botao_jogar_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotaoSom" to="." method="_on_botao_som_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotaoSair" to="." method="_on_botao_sair_pressed"]

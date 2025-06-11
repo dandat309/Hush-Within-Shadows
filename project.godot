@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Hush-within-shadows-main"
-run/main_scene="uid://lcxxhrgwyqhc"
+run/main_scene="res://Cenas/Introducao.tscn"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://sprites/icon.svg"
 
