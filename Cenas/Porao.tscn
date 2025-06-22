@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bxgojjglt4wm6"]
 
-[ext_resource type="Script" uid="uid://bdfw7vnrvnr6g" path="res://Scripst/Porao.gd" id="1_fpoet"]
+[ext_resource type="Script" uid="uid://c8c1y1ihsqegs" path="res://Scripst/Porao.gd" id="1_fpoet"]
 [ext_resource type="Texture2D" uid="uid://n7vmg6qjmwbd" path="res://Sprites/porao.png" id="2_0dp4n"]
 [ext_resource type="Texture2D" uid="uid://bi2a7x3m8w18t" path="res://Sprites/papel.png" id="4_0dp4n"]
 [ext_resource type="Texture2D" uid="uid://dd2jhp4kx7hqn" path="res://Sprites/ouija board.png" id="4_qturo"]
@@ -95,7 +95,7 @@ stretch_mode = 0
 [node name="armario" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.772729
+anchor_left = 0.771861
 anchor_top = 0.248259
 anchor_right = 0.771861
 anchor_bottom = 0.248259
