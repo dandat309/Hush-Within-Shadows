@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://bxgojjglt4wm6"]
 
 [ext_resource type="Script" uid="uid://c8c1y1ihsqegs" path="res://Scripst/Porao.gd" id="1_fpoet"]
-[ext_resource type="Texture2D" uid="uid://n7vmg6qjmwbd" path="res://Sprites/porao.png" id="2_0dp4n"]
-[ext_resource type="Texture2D" uid="uid://bi2a7x3m8w18t" path="res://Sprites/papel.png" id="4_0dp4n"]
-[ext_resource type="Texture2D" uid="uid://dd2jhp4kx7hqn" path="res://Sprites/ouija board.png" id="4_qturo"]
-[ext_resource type="AudioStream" uid="uid://2tqkxsp2ww31" path="res://Sons/creepy.mp3" id="4_ylq2f"]
-[ext_resource type="Texture2D" uid="uid://dh48lct50ulkx" path="res://Sprites/interruptor.png" id="5_cv8lb"]
-[ext_resource type="AudioStream" uid="uid://cqpwdiid3oemp" path="res://Sons/tentando abrir porta.mp3" id="5_mfaqy"]
-[ext_resource type="AudioStream" uid="uid://bm376nsrm53pi" path="res://Sons/interruptor.mp3" id="6_mfaqy"]
+[ext_resource type="Texture2D" uid="uid://7663w6ussb4y" path="res://Sprites/porao.png" id="2_0dp4n"]
+[ext_resource type="Texture2D" uid="uid://dikkdy5emxl8" path="res://Sprites/papel.png" id="4_0dp4n"]
+[ext_resource type="Texture2D" uid="uid://c2y1jk21vc7x5" path="res://Sprites/ouija board.png" id="4_qturo"]
+[ext_resource type="AudioStream" uid="uid://dqhtxs4l6f50f" path="res://Sons/creepy.mp3" id="4_ylq2f"]
+[ext_resource type="Texture2D" uid="uid://dccy4orqjw7i8" path="res://Sprites/interruptor.png" id="5_cv8lb"]
+[ext_resource type="AudioStream" uid="uid://molbbt13oy7g" path="res://Sons/tentando abrir porta.mp3" id="5_mfaqy"]
+[ext_resource type="AudioStream" uid="uid://bysvtt4x04qxq" path="res://Sons/interruptor.mp3" id="6_mfaqy"]
 
 [sub_resource type="Theme" id="Theme_bbmna"]
 
@@ -32,10 +32,10 @@ layout_mode = 0
 offset_left = -3.0
 offset_right = 1152.0
 offset_bottom = 644.0
-color = Color(0, 0, 0, 0.482353)
+color = Color(0, 0, 0, 0.662745)
 
 [node name="TabuleroOuija" type="TextureButton" parent="."]
-modulate = Color(1, 1, 1, 0.231373)
+modulate = Color(1, 1, 1, 0.160784)
 layout_mode = 0
 offset_left = 673.0
 offset_top = 462.0
@@ -82,7 +82,7 @@ offset_bottom = 176.0
 theme_override_font_sizes/normal_font_size = 30
 
 [node name="Bilhete" type="TextureButton" parent="."]
-modulate = Color(1, 1, 1, 0.423529)
+modulate = Color(1, 1, 1, 0.215686)
 layout_mode = 0
 offset_left = 612.0
 offset_top = 345.0
@@ -111,7 +111,7 @@ metadata/_edit_use_anchors_ = true
 stream = ExtResource("5_mfaqy")
 
 [node name="interruptor" type="TextureButton" parent="."]
-modulate = Color(1, 1, 1, 0.364706)
+modulate = Color(1, 1, 1, 0.247059)
 layout_mode = 0
 offset_left = 730.0
 offset_top = 266.0

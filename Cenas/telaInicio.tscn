@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://lcxxhrgwyqhc"]
 
-[ext_resource type="FontFile" uid="uid://dkbs6g2kx5gec" path="res://Font/RubikDirt-Regular.ttf" id="2_wmvt7"]
-[ext_resource type="AudioStream" uid="uid://bv50m7c13qoh" path="res://Sons/howling-wind-109590.mp3" id="3_hdk3u"]
-[ext_resource type="AudioStream" uid="uid://caishplhblnbw" path="res://Sons/mouse-click-331781.mp3" id="4_av0s0"]
+[ext_resource type="FontFile" uid="uid://dcp00nxk4pq4f" path="res://Font/RubikDirt-Regular.ttf" id="2_wmvt7"]
+[ext_resource type="AudioStream" uid="uid://e6mxfput0g6f" path="res://Sons/howling-wind-109590.mp3" id="3_hdk3u"]
+[ext_resource type="AudioStream" uid="uid://cwyaf5axrmb8f" path="res://Sons/mouse-click-331781.mp3" id="4_av0s0"]
 
 [sub_resource type="GDScript" id="GDScript_7fdmo"]
 script/source = "extends Control
