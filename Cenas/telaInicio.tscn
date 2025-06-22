@@ -1,9 +1,29 @@
 [gd_scene load_steps=8 format=3 uid="uid://lcxxhrgwyqhc"]
 
-[ext_resource type="Script" uid="uid://ddasojdr2ex1l" path="res://Scripst/tela_menu.gd" id="1_l142i"]
 [ext_resource type="FontFile" uid="uid://dkbs6g2kx5gec" path="res://Font/RubikDirt-Regular.ttf" id="2_wmvt7"]
 [ext_resource type="AudioStream" uid="uid://bv50m7c13qoh" path="res://Sons/howling-wind-109590.mp3" id="3_hdk3u"]
 [ext_resource type="AudioStream" uid="uid://caishplhblnbw" path="res://Sons/mouse-click-331781.mp3" id="4_av0s0"]
+
+[sub_resource type="GDScript" id="GDScript_7fdmo"]
+script/source = "extends Control
+
+@onready var fade = $FadeRect
+@onready var anim = $AnimationPlayer
+@onready var som_clique = $SonsClique
+
+func _on_botao_jogar_pressed() -> void:
+	som_clique.play()
+	anim.play(\"fade_out\")
+	await anim.animation_finished
+	get_tree().change_scene_to_file(\"res://Cenas/Introducao.tscn\")
+
+func _on_botao_som_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://Cenas/Introducao.tscn\")
+	
+
+func _on_botao_sair_pressed() -> void:
+		get_tree().change_scene_to_file(\"res://Cenas/Introducao.tscn\")
+"
 
 [sub_resource type="Animation" id="Animation_3b2dc"]
 length = 0.001
@@ -50,7 +70,7 @@ offset_left = -10.0
 offset_right = -10.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_l142i")
+script = SubResource("GDScript_7fdmo")
 
 [node name="Fundo" type="ColorRect" parent="."]
 layout_mode = 1

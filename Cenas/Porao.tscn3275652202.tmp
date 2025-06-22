@@ -1,13 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://bxgojjglt4wm6"]
+[gd_scene load_steps=6 format=3 uid="uid://bxgojjglt4wm6"]
 
 [ext_resource type="Script" uid="uid://bdfw7vnrvnr6g" path="res://Scripst/Porao.gd" id="1_fpoet"]
 [ext_resource type="Texture2D" uid="uid://n7vmg6qjmwbd" path="res://Sprites/porao.png" id="2_0dp4n"]
 [ext_resource type="Texture2D" uid="uid://bi2a7x3m8w18t" path="res://Sprites/papel.png" id="4_0dp4n"]
 [ext_resource type="Texture2D" uid="uid://dd2jhp4kx7hqn" path="res://Sprites/ouija board.png" id="4_qturo"]
-[ext_resource type="AudioStream" uid="uid://2tqkxsp2ww31" path="res://Sons/creepy.mp3" id="4_ylq2f"]
-[ext_resource type="Texture2D" uid="uid://dh48lct50ulkx" path="res://Sprites/interruptor.png" id="5_cv8lb"]
-[ext_resource type="AudioStream" uid="uid://cqpwdiid3oemp" path="res://Sons/tentando abrir porta.mp3" id="5_mfaqy"]
-[ext_resource type="AudioStream" uid="uid://bm376nsrm53pi" path="res://Sons/interruptor.mp3" id="6_mfaqy"]
 
 [sub_resource type="Theme" id="Theme_bbmna"]
 
@@ -29,8 +25,7 @@ stretch_mode = 5
 
 [node name="Darker" type="ColorRect" parent="Fundo"]
 layout_mode = 0
-offset_left = -3.0
-offset_right = 1152.0
+offset_right = 1155.0
 offset_bottom = 644.0
 color = Color(0, 0, 0, 0.482353)
 
@@ -45,9 +40,6 @@ scale = Vector2(1.46188, 0.592232)
 texture_normal = ExtResource("4_qturo")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Creepy" type="AudioStreamPlayer" parent="TabuleroOuija"]
-stream = ExtResource("4_ylq2f")
 
 [node name="caixaDedialogo" type="Panel" parent="."]
 visible = false
@@ -92,41 +84,5 @@ texture_normal = ExtResource("4_0dp4n")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="armario" type="TextureButton" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.772729
-anchor_top = 0.248259
-anchor_right = 0.771861
-anchor_bottom = 0.248259
-offset_left = -0.184006
-offset_top = 0.127991
-offset_right = 247.816
-offset_bottom = 425.128
-scale = Vector2(0.677075, 0.955775)
-stretch_mode = 0
-metadata/_edit_use_anchors_ = true
-
-[node name="TentandoAbrirPorta" type="AudioStreamPlayer" parent="armario"]
-stream = ExtResource("5_mfaqy")
-
-[node name="interruptor" type="TextureButton" parent="."]
-modulate = Color(1, 1, 1, 0.364706)
-layout_mode = 0
-offset_left = 730.0
-offset_top = 266.0
-offset_right = 760.0
-offset_bottom = 302.0
-texture_normal = ExtResource("5_cv8lb")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Interruptor" type="AudioStreamPlayer" parent="interruptor"]
-stream = ExtResource("6_mfaqy")
-volume_db = 10.792
-pitch_scale = 1.68
-
 [connection signal="pressed" from="TabuleroOuija" to="." method="_on_tabulero_ouija_pressed"]
 [connection signal="pressed" from="Bilhete" to="." method="_on_bilhete_pressed"]
-[connection signal="pressed" from="armario" to="." method="_on_armario_pressed"]
-[connection signal="pressed" from="interruptor" to="." method="_on_interruptor_pressed"]

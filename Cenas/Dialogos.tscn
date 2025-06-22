@@ -1,26 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://chrqsghjp7dsm"]
+[gd_scene load_steps=3 format=3 uid="uid://bgenmtvfxd8xi"]
 
-[ext_resource type="Script" uid="uid://bcuo08bvgw6ic" path="res://Scripst/introducao.gd" id="1_tdqpl"]
+[ext_resource type="Script" uid="uid://drhln1md5sdpa" path="res://Scripst/caixa_dialogo.gd" id="1_a4x0u"]
 
-[sub_resource type="Theme" id="Theme_tdqpl"]
+[sub_resource type="Theme" id="Theme_w7dvg"]
 
-[node name="Introducao" type="Control"]
+[node name="Dialogos" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_tdqpl")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 1)
+script = ExtResource("1_a4x0u")
 
 [node name="FundoCaixa" type="Panel" parent="."]
 layout_mode = 1
@@ -31,7 +22,7 @@ anchor_bottom = 1.0
 offset_top = -177.0
 grow_horizontal = 2
 grow_vertical = 0
-theme = SubResource("Theme_tdqpl")
+theme = SubResource("Theme_w7dvg")
 
 [node name="Nome" type="PanelContainer" parent="FundoCaixa"]
 layout_mode = 0

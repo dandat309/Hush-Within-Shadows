@@ -1,10 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://bxgojjglt4wm6"]
+[gd_scene load_steps=9 format=3 uid="uid://bxgojjglt4wm6"]
 
 [ext_resource type="Script" uid="uid://bdfw7vnrvnr6g" path="res://Scripst/Porao.gd" id="1_fpoet"]
 [ext_resource type="Texture2D" uid="uid://n7vmg6qjmwbd" path="res://Sprites/porao.png" id="2_0dp4n"]
 [ext_resource type="Texture2D" uid="uid://bi2a7x3m8w18t" path="res://Sprites/papel.png" id="4_0dp4n"]
 [ext_resource type="Texture2D" uid="uid://dd2jhp4kx7hqn" path="res://Sprites/ouija board.png" id="4_qturo"]
-[ext_resource type="AudioStream" uid="uid://2tqkxsp2ww31" path="res://Sons/creepy.mp3" id="4_ylq2f"]
 [ext_resource type="Texture2D" uid="uid://dh48lct50ulkx" path="res://Sprites/interruptor.png" id="5_cv8lb"]
 [ext_resource type="AudioStream" uid="uid://cqpwdiid3oemp" path="res://Sons/tentando abrir porta.mp3" id="5_mfaqy"]
 [ext_resource type="AudioStream" uid="uid://bm376nsrm53pi" path="res://Sons/interruptor.mp3" id="6_mfaqy"]
@@ -45,9 +44,6 @@ scale = Vector2(1.46188, 0.592232)
 texture_normal = ExtResource("4_qturo")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Creepy" type="AudioStreamPlayer" parent="TabuleroOuija"]
-stream = ExtResource("4_ylq2f")
 
 [node name="caixaDedialogo" type="Panel" parent="."]
 visible = false
