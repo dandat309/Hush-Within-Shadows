@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://bxgojjglt4wm6"]
+[gd_scene load_steps=11 format=3 uid="uid://bxgojjglt4wm6"]
 
 [ext_resource type="Script" uid="uid://c8c1y1ihsqegs" path="res://Scripst/Porao.gd" id="1_fpoet"]
 [ext_resource type="Texture2D" uid="uid://7663w6ussb4y" path="res://Sprites/porao.png" id="2_0dp4n"]
+[ext_resource type="Texture2D" uid="uid://cchdj24qmpi7a" path="res://Sprites/portafechada.png" id="3_wo1yh"]
 [ext_resource type="Texture2D" uid="uid://dikkdy5emxl8" path="res://Sprites/papel.png" id="4_0dp4n"]
 [ext_resource type="Texture2D" uid="uid://c2y1jk21vc7x5" path="res://Sprites/ouija board.png" id="4_qturo"]
 [ext_resource type="AudioStream" uid="uid://dqhtxs4l6f50f" path="res://Sons/creepy.mp3" id="4_ylq2f"]
@@ -33,6 +34,11 @@ offset_left = -3.0
 offset_right = 1152.0
 offset_bottom = 644.0
 color = Color(0, 0, 0, 0.662745)
+
+[node name="Portafechada" type="Sprite2D" parent="Fundo"]
+position = Vector2(504.5, 362.25)
+scale = Vector2(0.495, 0.558524)
+texture = ExtResource("3_wo1yh")
 
 [node name="TabuleroOuija" type="TextureButton" parent="."]
 modulate = Color(1, 1, 1, 0.160784)
@@ -113,10 +119,10 @@ stream = ExtResource("5_mfaqy")
 [node name="interruptor" type="TextureButton" parent="."]
 modulate = Color(1, 1, 1, 0.247059)
 layout_mode = 0
-offset_left = 730.0
-offset_top = 266.0
-offset_right = 760.0
-offset_bottom = 302.0
+offset_left = 428.0
+offset_top = 316.0
+offset_right = 448.0
+offset_bottom = 338.0
 texture_normal = ExtResource("5_cv8lb")
 ignore_texture_size = true
 stretch_mode = 0
