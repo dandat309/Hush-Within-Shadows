@@ -1,8 +1,5 @@
 extends Control
-
-@export var portafechada: Texture
-@export var portaaberta: Texture
-
+@onready var portaaberta = preload("res://Sprites/portaaberta.PNG")
 @onready var TabuleroOuija = $TabuleroOuija
 @onready var som_TabuleroOuija = $TabuleroOuija/Creepy
 @onready var armario = $armario
@@ -27,7 +24,6 @@ func _ready():
 	fundo_caixa.visible = false
 	chave.visible = false
 	Sons.sons_ambiente.stop()
-
 
 func mostrar_mensagem(nome: String, fala: String) -> void:
 	nome_label.text = nome
@@ -82,7 +78,7 @@ func _on_chave_pressed() -> void:
 	abrir_porta()
 
 func abrir_porta() -> void:
-	porta.texture_pressed = portaaberta
+	porta.texture_normal = portaaberta
 	som_porta.play()
 	await get_tree().create_timer(1.0).timeout
 	get_tree().change_scene_to_file("res://Cenas/ProximaCena.tscn")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3ievrr4ig4bf"
-path="res://.godot/imported/portaaberta.PNG-91fa9a8d2b86e28a4ed113375f32690c.ctex"
+uid="uid://bxbhoeppo0k5h"
+path="res://.godot/imported/mulher gravida.png-c14ccc05f8e899dc1d47e172e2ade391.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/portaaberta.PNG"
-dest_files=["res://.godot/imported/portaaberta.PNG-91fa9a8d2b86e28a4ed113375f32690c.ctex"]
+source_file="res://Sprites/mulher gravida.png"
+dest_files=["res://.godot/imported/mulher gravida.png-c14ccc05f8e899dc1d47e172e2ade391.ctex"]
 
 [params]
 
