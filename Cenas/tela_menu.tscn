@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://lcxxhrgwyqhc"]
 
 [ext_resource type="Script" uid="uid://ddasojdr2ex1l" path="res://Scripst/tela_menu.gd" id="1_3b2dc"]
-[ext_resource type="FontFile" uid="uid://dkbs6g2kx5gec" path="res://Font/RubikDirt-Regular.ttf" id="2_wm3vf"]
-[ext_resource type="AudioStream" uid="uid://bv50m7c13qoh" path="res://Sons/howling-wind-109590.mp3" id="4_irlws"]
-[ext_resource type="AudioStream" uid="uid://caishplhblnbw" path="res://Sons/mouse-click-331781.mp3" id="5_3b2dc"]
+[ext_resource type="FontFile" uid="uid://dcp00nxk4pq4f" path="res://Font/RubikDirt-Regular.ttf" id="2_wm3vf"]
+[ext_resource type="AudioStream" uid="uid://e6mxfput0g6f" path="res://Sons/howling-wind-109590.mp3" id="4_irlws"]
+[ext_resource type="AudioStream" uid="uid://cwyaf5axrmb8f" path="res://Sons/mouse-click-331781.mp3" id="5_3b2dc"]
 
 [sub_resource type="Animation" id="Animation_3b2dc"]
 length = 0.001
